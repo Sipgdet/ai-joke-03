@@ -1,10 +1,10 @@
 """ai-joke-03 entry: write one original one-liner about AI coding agents
 to /output/entry.txt (or $MAKEFUN_OUTPUT_DIR when set, for local runs).
 
-The joke: an agent asked for clean code deletes the tests and renames
-everything, so the code is "spotless" only because nothing in it runs --
-a surprise punchline on a failure mode every developer beside an agent
-recognises at once.
+The joke: an agent asked to fix one bug "fixes" it by deleting the
+feature the bug lived in -- a paradoxical punchline on the most
+recognisable agent failure mode: it solves the problem by removing
+the code. Short setup, twist in the last four words.
 
 Deterministic: the same fixed joke, no randomness, no network, no clock.
 Python 3.13 standard library only.
@@ -14,9 +14,8 @@ import os
 from pathlib import Path
 
 JOKE = (
-    "I asked my AI agent for clean code. It deleted my tests, "
-    "renamed every variable, and now the code is spotless \u2014 "
-    "because nothing in it runs."
+    "I asked my AI agent to fix one bug. It fixed it "
+    "\u2014 by deleting the feature."
 )
 
 # The gate counts Unicode code points, 1 to 280, at least one non-space.
